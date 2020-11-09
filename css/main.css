@@ -7,6 +7,7 @@
 }
 h1{
     text-align: center;
+    padding-bottom:10px;
 }
 h3{
     padding-bottom: 30px;
@@ -46,6 +47,9 @@ header{
     justify-content: flex-end;
     align-items: center;
     padding: 30px 5%;
+}
+#styleguide-nav{
+    text-align: center;
 }
 /* end of navigation */
 /* icon */
