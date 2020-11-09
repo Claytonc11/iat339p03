@@ -23,6 +23,7 @@ h3{
     list-style-type: none;
     font-family: 'Merriweather Sans', sans-serif;
     font-weight: 500;
+    font-size: 20px;
     text-decoration: none;
    
   } 
@@ -43,7 +44,7 @@ h3{
 }
 header{
     display:flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: flex-end;
     align-items: center;
     padding: 30px 5%;
@@ -62,9 +63,29 @@ header{
 .youtube {
     background-image: url("../img/contacticon/youtube-white.svg");
   }
-  .youtube:hover,
-  .youtube:focus {
+.youtube:hover, .youtube:focus {
     background-image: url("../img/contacticon/youtube-black.svg");
+  }
+  
+  .facebook {
+    background-image: url("../img/contacticon/fb-white.svg");
+  }
+.facebook:hover, .facebook:focus {
+    background-image: url("../img/contacticon/fb-black.svg");
+  }
+
+  .gmail {
+    background-image: url("../img/contacticon/gmail-white.svg");
+  }
+.gmail:hover, .gmail:focus {
+    background-image: url("../img/contacticon/gmail-black.svg");
+  }
+
+  .linkedin {
+    background-image: url("../img/contacticon/linkedin-white.svg");
+  }
+.linkedin:hover, .linkedin:focus {
+    background-image: url("../img/contacticon/linkedin-black.svg");
   }
 
 /* end of icon */
