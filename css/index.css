@@ -11,8 +11,8 @@
     justify-content: flex-end;
 }
 #videoeditor{
-    
-    transform-origin: 45px -30px;
+    position: absolute;
+    transform-origin: 3px 6px;
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
@@ -26,13 +26,15 @@
     display: flex;
     flex-direction:column;
     justify-content: flex-end;
+    
   }
-/* #seemore{
+#seemore{
     position: absolute;
-    bottom: 0;
-    right:0;
+    bottom:0;
+    right:5%;
 
-} */
+}
+
 .col{
     flex:0;
     padding: 0 10px 0 10px;
@@ -52,5 +54,52 @@ position: absolute;
   #transformtext{
     display: flex;
     flex-direction:column;
-    justify-content: flex-end;
+   
   }
+
+ 
+  @media screen and (max-width: 850px) {
+      #seemore{
+          position: relative;
+          bottom:0;
+          right:0;
+      }
+    #myname {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0, 0);
+    }
+    #videoeditor{
+    position: relative;
+        padding: 0 10px 0 10px;
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    #groupicon{
+   
+        flex-direction:row;
+        justify-content: space-between;
+    }
+    .item1{
+        flex:1;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        
+     }
+     .container{
+         flex-direction: column;
+     }
+     .col img{
+        
+        width:100%;
+      height: auto;
+    }
+}
+/* @media screen and (max-width: 800px) {
+    #videoeditor{
+        position: absolute;
+        transform-origin: 60px -30px;
+        
+    }
+  } */
