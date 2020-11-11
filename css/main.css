@@ -26,31 +26,47 @@ h3{
     font-size: 20px;
     text-decoration: none;
    
-  } 
-#navigation{
-    list-style: none;
+  }
+  .hamburger{
+    display: none;
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    } 
+  .hamburger:focus{
+    outline:none;
+  }
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
 }
-#navigation li{
-    display: inline-block;
+.navigation li{
+  
     padding: 0px 20px;
     
 }
-#navigation li a{
+.navigation li a{
+  display: inline-block;
     transition: all 0.5 ease 0s;
 }
-#navigation li a:hover{
+.navigation li a:hover{
     color: gray;
     border-bottom: 2px solid white;
 }
-header{
+nav {
     display:flex;
-    /* flex-wrap: wrap; */
-    justify-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
     padding: 30px 5%;
 }
 #styleguide-nav{
-    text-align: center;
+    justify-content: center;
 }
 /* end of navigation */
 /* icon */
@@ -61,31 +77,31 @@ header{
   background-size: cover;
 }
 .youtube {
-    background-image: url("../img/contacticon/youtube-white.svg");
+    background-image: url("../img/contacticon/youtube-black.svg");
   }
 .youtube:hover, .youtube:focus {
-    background-image: url("../img/contacticon/youtube-black.svg");
+    background-image: url("../img/contacticon/youtube-white.svg");
   }
   
   .facebook {
-    background-image: url("../img/contacticon/fb-white.svg");
+    background-image: url("../img/contacticon/fb-black.svg");
   }
 .facebook:hover, .facebook:focus {
-    background-image: url("../img/contacticon/fb-black.svg");
+    background-image: url("../img/contacticon/fb-white.svg");
   }
 
   .gmail {
-    background-image: url("../img/contacticon/gmail-white.svg");
+    background-image: url("../img/contacticon/gmail-black.svg");
   }
 .gmail:hover, .gmail:focus {
-    background-image: url("../img/contacticon/gmail-black.svg");
+    background-image: url("../img/contacticon/gmail-white.svg");
   }
 
   .linkedin {
-    background-image: url("../img/contacticon/linkedin-white.svg");
+    background-image: url("../img/contacticon/linkedin-black.svg");
   }
 .linkedin:hover, .linkedin:focus {
-    background-image: url("../img/contacticon/linkedin-black.svg");
+    background-image: url("../img/contacticon/linkedin-white.svg");
   }
 
 /* end of icon */
@@ -118,10 +134,25 @@ h2{
 }
 
 @media screen and (max-width: 500px) {
-    header, .container {
+   .container {
       flex-direction: column;
     }
-    header{
-      padding: 0;
+
+    .navigation.show{
+      display: flex;
     }
+    
+    .navigation{
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+    .hamburger{
+      display: block;
+      padding: 10px 5%;
+      } 
+    /* header{
+      padding: 0;
+      justify-content: center;
+    } */
 }

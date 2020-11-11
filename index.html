@@ -7,16 +7,21 @@
         <link href="css/main.css" type="text/css" rel="stylesheet">
         <link href="css/index.css" type="text/css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/d434bbaf5c.js" crossorigin="anonymous"></script>
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+        <script src="main.js"></script>
+       
     </head>
 
     <body>
         <header>
-            <img src="img/logo.png" alt="logo" id="logo">
             <nav>
-                <ul id="navigation">
+                <img src="img/logo.png" alt="logo" id="logo">
+                <button class="hamburger" id="hamburger">
+                    <i onclick="changeIcon(this);" class="fas fa-bars"></i></button>
+                <ul id="navigation" class="navigation">
                     <li>
-                        <a href="#">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li>
                         <a href="#">About</a>
@@ -30,6 +35,7 @@
                 </ul>
                 
             </nav>
+           
         </header>
         <div class="parent">
             <h1 id="myname">Clayton Cheung</h1>
@@ -44,11 +50,11 @@
                     <span class="icon linkedin"></span>
                 </div>
                 <div class="col">
-                    <img src="img/homepage.png" alt="homepageimg">
+                    <img src="img/homepage.gif" alt="homepageimg">
                  </div>
                  <div id="transformtext">
                     
-                        <p id="videoeditor">Video Editor</p>
+                        <p class="hometext">Video Editor</p>
                        
                  </div>
             </div>
@@ -61,8 +67,8 @@
             </div>
               
            
-           
-           
+           <!-- https://css-tricks.com/snippets/css/text-rotation/  rotate text-->
+           <!-- https://stackoverflow.com/questions/38948102/center-one-and-right-left-align-other-flexbox-element make mid and right have content -->
         
             
         </div>

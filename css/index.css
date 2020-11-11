@@ -9,12 +9,22 @@
     display: flex;
     flex-direction:column;
     justify-content: flex-end;
+  
 }
-#videoeditor{
+#groupicon span{
+    margin-top: 10px;
+}
+.hometext{
     position: absolute;
-    transform-origin: 3px 6px;
+    transform-origin: 0 0;
     -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
+    transform: rotate(90deg) translate(0, -12px);
+   
+}
+
+#name{
+    transform: translate(10px, 0);
+    font-size: 50px;
 }
 .item1{
     flex:1;
@@ -42,27 +52,35 @@
 #parent{
     position: relative;
 }
+
 #myname {
 position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-45%, -50%);
   font-size: 5rem;
   font-family: 'Merriweather Sans', sans-serif;
   background-color: transparent;
+  text-shadow: 2px 2px #000000;
   }
   #transformtext{
     display: flex;
     flex-direction:column;
-   
+    white-space: nowrap;
+    overflow-x: auto;
   }
-
+  #transformtext p {
+      display: inline-block;
+  }
+/* #name{
+    font-size: 20px;
+} */
  
   @media screen and (max-width: 850px) {
       #seemore{
           position: relative;
           bottom:0;
-          right:0;
+          left:1%;
       }
     #myname {
       position: relative;
@@ -70,7 +88,11 @@ position: absolute;
       left: 0;
       transform: translate(0, 0);
     }
-    #videoeditor{
+    #name{
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    .hometext{
     position: relative;
         padding: 0 10px 0 10px;
         -ms-transform: rotate(0deg);
@@ -87,13 +109,21 @@ position: absolute;
         justify-content: space-between;
         
      }
+     
      .container{
          flex-direction: column;
+     }
+     .col{
+         padding:0;
      }
      .col img{
         
         width:100%;
       height: auto;
+    }
+
+    nav{
+        padding: 30px 1%;
     }
 }
 /* @media screen and (max-width: 800px) {

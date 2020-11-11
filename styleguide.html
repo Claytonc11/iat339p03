@@ -7,13 +7,18 @@
         <link href="css/main.css" type="text/css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+        <script src="https://kit.fontawesome.com/d434bbaf5c.js" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
     </head>
 
     <body>
         <header>
-            <img src="img/logo.png" alt="logo" id="logo">
+           
             <nav>
-                <ul id="navigation">
+                <img src="img/logo.png" alt="logo" id="logo">
+                <button class="hamburger" id="hamburger">
+                    <i onclick="changeIcon(this);" class="fas fa-bars"></i></button>
+                <ul id="navigation" class="navigation">
                     <li>
                         <a href="index.html">Home</a>
                     </li>
@@ -29,6 +34,7 @@
                 </ul>
                 
             </nav>
+           
         </header>
             <h1>Portfolio Styleguide</h1>
             <nav id="styleguide-nav">
@@ -85,6 +91,7 @@
                         </ul>
                         
                     </nav>
+                   
                 </div>
                 <div class="col">
                     <h3>Code</h3>
