@@ -6,6 +6,8 @@
         <title>P03: Portfolio Styleguide</title>
         <link href="css/main.css" type="text/css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap" rel="stylesheet">
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
         <script src="https://kit.fontawesome.com/d434bbaf5c.js" crossorigin="anonymous"></script>
         <script src="main.js"></script>
@@ -15,7 +17,8 @@
         <header>
            
             <nav>
-                <img src="img/logo.png" alt="logo" id="logo">
+                <img src="img/logo2.png" alt="logo" id="logo">
+                <!-- Learned from https://www.youtube.com/watch?v=ydZc17rlR5E&ab_channel=FlorinPop -->
                 <button class="hamburger" id="hamburger">
                     <i onclick="changeIcon(this);" class="fas fa-bars"></i></button>
                 <ul id="navigation" class="navigation">
@@ -38,7 +41,7 @@
         </header>
             <h1>Portfolio Styleguide</h1>
             <nav id="styleguide-nav">
-                <ul id="navigation">
+                <ul class="navigation" id="style-nav">
                     <li>
                         <a href="#interactivelement">Interactiv Element</a>
                     </li>
@@ -75,7 +78,7 @@
                 <div class="col">
                     <h3>Navigation Link</h3>
                     <nav>
-                        <ul id="navigation">
+                        <ul class="navigation">
                             <li>
                                 <a href="#">Home</a>
                             </li>
@@ -120,7 +123,11 @@
                 
                 <div class="col">
                     <h3>Headings</h3>
-                    <a href="#">See More</a>
+                    <div class="heading">
+                        <h1>Heading 1</h1>
+                        <h2>Heading 2</h2>
+                    </div>
+                   
                 </div>
                 <div class="col">
                     <h3>Code</h3>
@@ -134,20 +141,101 @@
                 
                 <div class="col-full">
                     <h3>Bio</h3>
-                    <p>Hi, my name is Clayton Cheung, and I am a third year student in SIAT. </p>
+                    <p>Hi I am Clayton Cheung, and I am a third year IAT student in SFU. I am interested in video editing and UX design. I have learned editing for two years, and I would like to create videos that are related to media and technology. I am a minimalist on designing and editing, therefore, I created a black and white theme website that can symbolize video as well. This portfolio is my first step to showcase my work to the audiences. 
+                         </p>
                 </div>
                 
             </div>
             <div class="container">
                 
                 <div class="col">
-                    <h3>Analysis</h3>
-                    <p>Hi, my name is Clayton Cheung, and I am a third year student in SIAT. </p>
+                    <h3>Video #1</h3>
+                    <iframe src="https://www.youtube.com/embed/vqypIN00D3s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
+                <div class="col">
+                    <h3>Analysis #1</h3>
+                    <p> This is a highlight reel of the production company I am working in. The highlight reel recaps what the company did in 2018. I was incharge of editing this video, and I used Final Cut Pro X to complete this project. In this project, I selected the clips from various completed projects, such as wedding highlights, music videos and our competition film. At the beginning, I have to select the b-rolls that are suitable for the intro scene. Then, I picked some scenes that are shooting in different shot sizes. After I combine all the clips, I have to add luts to all the video to make it more appealing. I also add some sound effects to make the scene more natural. At 20 seconds, and 50 seconds I added crowded sound effects and adjusted the volume for different scenes to blend it with the background music. At the end, I applied snow VFX to match with the last snowing scene to the ending logo part. I was a beginner when I was editing this video, and it is a memorable experience for me. I learned a lot of editing techniques from editing this video. I learned how to match the clips with the music video seamlessly, choose suitable footage for highlight videos and combine non-diegetic sounds with the clips. 
+                    </p>
+                </div>
+                
+            </div>
+
+            <div class="container">
+                
+                <div class="col">
+                    <h3>Video #2</h3>
+                    <iframe src="https://www.youtube.com/embed/UzDNZ83VNYE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="col">
-                    <h3>Bio</h3>
-                    <p>Hi, my name is Clayton Cheung, and I am a third year student in SIAT. </p>
+                    <h3>Analysis #2</h3>
+                    <p> This is a stop motion project from IAT 313. I was in charge of filming and editing the video, and I used Premiere Pro to edit the short film. At first, we were brainstorming on the concept we wanted to focus on. SInce the project’s date is in the month of Halloween, we think that it would be a good idea to film a Halloween related film, therefore, we came up with this film. It is about a skeleton entering an audition to become a superstar. My partner and I made the background and props and we filmed for 3 days. It was a tough time because we had to take a lot of pictures and make it into a video. During the editing process, some of the images are too dark, and I colour graded the images to make the film more lively. I combined the film and looked for the sound effect for the characters. It took me a while to find the sound effects because it is hard to find an effect that is related with a figurine. Although the film is not long, it teaches me how to deliver the film message to the audience within a short amount of time. Also, it teaches me how to edit still images using different fps.
+                    </p>
                 </div>
+                
+            </div>
+        </section>
+
+
+        <section id="combinedelement">
+            <h2>Combined Element</h2>
+            <div class="container">
+                <div class="col-full">
+                    <h1>Work</h1>
+                </div>
+               
+                <div class="six-col" id="contrast">
+                    
+                    <iframe src="https://www.youtube.com/embed/vqypIN00D3s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+                </div>
+                
+                    <div class="four-col">
+                    <h3>Apic Production 2018 Highlight Reel Project</h3>
+                    <p>This is a highlight reel of the production company I am working in. The highlight reel recaps what the company did in 2018. </p>
+                    <a href="work.html" id="seemore">See more</a>
+                </div>
+                      
+              
+                
+                    <div class="four-col">
+                    <h3>IAT 313 Skill Building Assignment: Stop Motion Animation - The Dancer</h3>
+                    <p>The Dancer is a stop motion project from IAT 313. I was in charge of filming and editing the video, and I used Premiere Pro to edit the short film. It is about a skeleton entering an audition to become a superstar.  </p>
+                    <a href="work.html" id="seemore">See more</a>
+
+
+                </div>
+                <div class="six-col" id="contrast">
+                    <iframe src="https://www.youtube.com/embed/UzDNZ83VNYE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="container">
+                <iframe src="https://www.youtube.com/embed/vqypIN00D3s" class="col-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+                
+                <div class="col nopaddingtop">
+                    <h3>Apic Production 2018 Highlight Reel Project</h3>
+                </div>
+                <div class="col nopaddingtop">
+                    <p class="moveleft">Genre: Highlight, Documentary</p>
+                </div>
+                <div class="col-full">
+                    <h3>Description</h3>
+                    <p> This is a highlight reel of the production company I am working in. The highlight reel recaps what the company did in 2018. I was incharge of editing this video, and I used Final Cut Pro X to complete this project. In this project, I selected the clips from various completed projects, such as wedding highlights, music videos and our competition film. At the beginning, I have to select the b-rolls that are suitable for the intro scene. Then, I picked some scenes that are shooting in different shot sizes. After I combine all the clips, I have to add luts to all the video to make it more appealing. I also add some sound effects to make the scene more natural. At 20 seconds, and 50 seconds I added crowded sound effects and adjusted the volume for different scenes to blend it with the background music. At the end, I applied snow VFX to match with the last snowing scene to the ending logo part. I was a beginner when I was editing this video, and it is a memorable experience for me. I learned a lot of editing techniques from editing this video. I learned how to match the clips with the music video seamlessly, choose suitable footage for highlight videos and combine non-diegetic sounds with the clips. 
+
+                </div>
+ 
+                
+            </div>
+            <div class="container">
+                <h1 class="col-full">About</h1>
+                <h2 class="col-full">Skill</h2>
+                <div class="three-col">
+                    <h3>Editing</h3>
+                </div>
+                <div class="three-col">
+                    <h3>After Effect</h3>
+                </div>
+                <div class="three-col">
+                    <h3>Mandarin</h3>
+                </div>
+              
                 
             </div>
         </section>
