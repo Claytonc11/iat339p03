@@ -1,0 +1,58 @@
+.container{
+ 
+    padding-bottom: 20px;
+    border:none;
+   
+    
+}
+
+#me{
+    width: 100%;
+   height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.isme{
+ 
+    position: relative;
+  
+    padding-bottom : 35%; /* = width for a 1:1 aspect ratio */
+    
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover; 
+    background-image: url("../img/me.jpg");
+}
+#groupicon{
+    display: flex;
+   
+    justify-content: flex-end;
+  
+}
+#groupicon span{
+    margin-top: 10px;
+}
+.meandcontact{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 900px) {
+    .meandcontact{
+       
+        flex-direction: column;
+    }
+    #groupicon{
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .col{
+        padding: 0;
+        
+    }
+    .isme{
+        padding-bottom : 35%;
+    }
+}
