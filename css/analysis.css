@@ -1,0 +1,17 @@
+.container{
+ 
+    padding-bottom: 20px;
+    border:none;
+   
+    
+}
+.col-full{
+    padding: 50px 0 10px 0;
+ }
+iframe{
+    width: 100%;
+    height: 800px;
+}
+.col{
+    padding: 0;
+}
