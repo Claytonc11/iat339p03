@@ -3,7 +3,7 @@
     padding-bottom: 20px;
     border:none;
    
-    
+    margin:0 5%;
 }
 
 #me{
@@ -12,6 +12,10 @@
     object-fit: cover;
     display: block;
 }
+.col-full{
+    padding: 50px;
+}
+
 .isme{
  
     position: relative;
