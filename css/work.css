@@ -7,13 +7,3 @@
 iframe{
     height: 500px;
 }
-.work{
-    padding-bottom: 50px;
-}
-
-@media screen and (max-width: 600px) {
-    .work:nth-of-type(3){
-        order: 4;
-    }
-
-}
