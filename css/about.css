@@ -12,10 +12,15 @@
     object-fit: cover;
     display: block;
 }
-.container h1{
+.container .col-full{
     padding: 50px;
 }
-
+.col{
+    padding: 0 50px 0 50px;
+}
+p{
+    font-size: 20px;
+}
 .isme{
  
     position: relative;
@@ -36,10 +41,24 @@
 #groupicon span{
     margin-top: 10px;
 }
+#contactme{
+    vertical-align: middle;
+    line-height: 65px;
+}
 .meandcontact{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    vertical-align: bottom;
+}
+.three-col{
+    text-align: center;
+    
+}
+.skillimg{
+    width:100px;
+    height:100px;
+    
 }
 @media screen and (max-width: 900px) {
     .meandcontact{
