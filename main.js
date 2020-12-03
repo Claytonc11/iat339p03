@@ -10,15 +10,15 @@ window.onload=function(){
         var modal = document.getElementById("myModal");
         var modal2 = document.getElementById("myModal2");
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
+var highlight = document.getElementById("snow");
 var soundimg = document.getElementById("soundeffect");
 var stopmotionbts = document.getElementById("stopmotionbts");
 var modalImg = document.getElementById("modalimage");
 var captionText = document.getElementById("caption");
 var modalImg2 = document.getElementById("modalimage2");
 var captionText2 = document.getElementById("caption2");
-if(img){
-    img.onclick = function(){
+if(highlight){
+  highlight.onclick = function(){
         modal.style.display = "flex";
         modalImg.src = this.src;
         captionText.innerHTML = "Snow Effect in APIC 2018 Reel Project";
@@ -37,7 +37,7 @@ if(img){
     stopmotionbts.onclick = function(){
         modal2.style.display = "flex";
         modalImg2.src = this.src;
-        captionText2.innerHTML = "Stopmotion Behind the Scene";
+        captionText2.innerHTML = "Stop Motion Behind the Scene";
       }
       modal2.onclick = function() { 
         modal2.style.display = "none";

@@ -41,12 +41,7 @@
     padding-right: 5%;
     
  }
- /* .item2{
-    display: flex;
-    flex-direction:column;
-    justify-content: flex-end;
-    
-  } */
+
 #seemore{
     position: absolute;
     bottom:5%;
@@ -95,13 +90,18 @@ position: absolute;
       height: auto;
       
     }
-
+    #myname{
+        font-size:1rem;
+    }
 }
   @media screen and (max-width: 900px) {
     .container {
         flex-direction: column;
       }
-  
+      #myname{
+          font-size:3rem;
+      }
+     
      .col img{
         max-width: 100%;
          width: 100%;
@@ -139,6 +139,7 @@ position: absolute;
         flex:1;
         flex-direction: column-reverse;
         justify-content: space-between;
+        padding-right: 0;
         
      }
      

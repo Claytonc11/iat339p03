@@ -3,8 +3,11 @@ h2{
 }
 .link{
     font-size: 12px;
+    border-bottom: 1px white solid;
 }
-
+.link:hover{
+    border-bottom: none;  
+}
 html{
     height: 100%;
 }
