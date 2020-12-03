@@ -5,15 +5,17 @@
    
     margin:0 5%;
 }
-
+h1, h2{
+    padding: 0;
+}
 #me{
     width: 100%;
    height: 100%;
     object-fit: cover;
     display: block;
 }
-.container .col-full{
-    padding: 50px;
+#about{
+    padding-bottom: 50px;
 }
 .col{
     padding: 0 50px 0 50px;
@@ -39,22 +41,21 @@ p{
   
 }
 #groupicon span{
-    margin-top: 10px;
+    margin: 10px 5px 0;
 }
 #contactme{
     vertical-align: middle;
     line-height: 65px;
+    font-size: 20px;
 }
 .meandcontact{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     vertical-align: bottom;
+    padding-top: 50px;
 }
-.three-col{
-    text-align: center;
-    
-}
+
 .skillimg{
     width:100px;
     height:100px;
