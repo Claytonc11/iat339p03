@@ -9,14 +9,16 @@ window.onload=function(){
 
         var modal = document.getElementById("myModal");
         var modal2 = document.getElementById("myModal2");
-// Get the image and insert it inside the modal - use its "alt" text as a caption
+
 var highlight = document.getElementById("snow");
 var soundimg = document.getElementById("soundeffect");
 var stopmotionbts = document.getElementById("stopmotionbts");
+
 var modalImg = document.getElementById("modalimage");
 var captionText = document.getElementById("caption");
 var modalImg2 = document.getElementById("modalimage2");
 var captionText2 = document.getElementById("caption2");
+
 if(highlight){
   highlight.onclick = function(){
         modal.style.display = "flex";
@@ -59,7 +61,7 @@ function changeIcon(t){
 
 }
 
-
+// Learned from https://stackoverflow.com/questions/9778888/uncaught-typeerror-cannot-set-property-onclick-of-null
 //   Learned from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img
 //   Learned from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar
 //  Learned from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_like_dislike
