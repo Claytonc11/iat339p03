@@ -195,7 +195,7 @@ nav {
   }
   to{
     opacity: 1;
-    transform: ttranslateY(0);
+    transform: translateY(0);
   }
 
 }
