@@ -72,20 +72,27 @@ iframe{
   
   /* Add Animation */
   .modal-content, .caption {  
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
+    -webkit-animation: zoom 0.5s;
+    animation: zoom 0.5s;
+   
   }
   
   @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
+    from {
+      -webkit-transform:scale(0);
+    } 
+    to {
+      -webkit-transform:scale(1);
+    }
   }
   
   @keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
+    from {
+      transform:scale(0);
+    } 
+    to {
+      transform:scale(1);
+    }
   }
   
   /* The Close Button */
@@ -96,7 +103,7 @@ iframe{
     color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
-    transition: 0.3s;
+    transition: 0.2s;
   }
   
   .close:hover,
